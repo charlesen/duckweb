@@ -1,0 +1,9 @@
+<div class="container">
+  <h3 class="text-center">Fil d'actualité</h3>
+  <div class="text-center text-feed" *ngFor="let feed of feeds">
+    <p>{{feed?.name?.title}} {{feed?.name?.first}} {{feed?.name?.last}}</p>
+    <p>({{feed?.location.country}})</p>
+    <img src="{{feed?.picture?.thumbnail}}" alt="Photo de {{feed?.name?.first}}" />
+    <p>Tel : {{feed?.cell}}</p>
+  </div>
+</div>
